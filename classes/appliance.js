@@ -13,3 +13,5 @@ class SmartAppliance {
         this.connected = false;
     }
 }
+
+module.exports = { SmartAppliance }
