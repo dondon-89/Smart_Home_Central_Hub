@@ -1,3 +1,5 @@
+// Smart Appliance base class
+
 class SmartAppliance {
     constructor() {
         this.connected = false;
