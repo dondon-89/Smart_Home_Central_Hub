@@ -1,3 +1,5 @@
+// Express server for Smart Home Central Hub app
+
 const express = require('express');
 
 function main() {
