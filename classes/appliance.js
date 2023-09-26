@@ -7,6 +7,14 @@ class SmartAppliance {
         this._name = String(name);
     }
 
+    get connected() {
+        return this._connected;
+    }
+
+    get poweredOn() {
+        return this._poweredOn;
+    }
+
     get name() {
         return this._name;
     }
@@ -16,19 +24,19 @@ class SmartAppliance {
     }
 
     connect() {
-        this.connected = true;
+        this._connected = true;
     }
 
     disconnect() {
-        this.connected = false;
+        this._connected = false;
     }
 
     powerOn() {
-        this.poweredOn = true;
+        this._poweredOn = true;
     }
 
     powerOff() {
-        this.poweredOn = false;
+        this._poweredOn = false;
     }
 }
 
