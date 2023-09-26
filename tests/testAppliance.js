@@ -15,4 +15,14 @@ describe('SmartAppliance', () => {
         testAppliance.disconnect();
         assert.equal(testAppliance.connected, false)
     });
+
+    it('should power on when powerOn method is called', () => {
+        testAppliance.powerOn();
+        assert.equal(testAppliance.poweredOn, true);
+    });
+
+    it('should power off when powerOff method is called', () => {
+        testAppliance.powerOff();
+        assert.equal(testAppliance.poweredOn, false);
+    });
 });

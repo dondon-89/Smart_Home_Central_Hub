@@ -3,6 +3,7 @@
 class SmartAppliance {
     constructor() {
         this.connected = false;
+        this.poweredOn = false;
     }
 
     connect() {
@@ -11,6 +12,14 @@ class SmartAppliance {
 
     disconnect() {
         this.connected = false;
+    }
+
+    powerOn() {
+        this.poweredOn = true;
+    }
+
+    powerOff() {
+        this.poweredOn = false;
     }
 }
 
