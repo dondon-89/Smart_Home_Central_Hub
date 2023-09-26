@@ -25,4 +25,9 @@ describe('SmartAppliance', () => {
         testAppliance.powerOff();
         assert.equal(testAppliance.poweredOn, false);
     });
+
+    it('should be able to set a custom name', () => {
+        testAppliance.name = 'Bingo';
+        assert.equal(testAppliance.name, 'Bingo');
+    })
 });

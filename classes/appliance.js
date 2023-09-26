@@ -1,9 +1,18 @@
 // Smart Appliance base class
 
 class SmartAppliance {
-    constructor() {
-        this.connected = false;
-        this.poweredOn = false;
+    constructor(name='') {
+        this._connected = false;
+        this._poweredOn = false;
+        this._name = String(name);
+    }
+
+    get name() {
+        return this._name;
+    }
+
+    set name(name) {
+        this._name = String(name);
     }
 
     connect() {
