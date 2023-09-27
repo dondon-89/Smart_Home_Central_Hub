@@ -1,6 +1,7 @@
 // Express server for Smart Home Central Hub app
 
 const express = require('express');
+const SmartHomeApp = require('./classes/homeApp');
 
 function main() {
     const app = express();
